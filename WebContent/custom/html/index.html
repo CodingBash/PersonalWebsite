@@ -53,8 +53,27 @@
 <!-- Custom css file -->
 <!-- Insert any other files -->
 </head>
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
 
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand pull-right" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#pricing">PRICING</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="jumbotron text-center">
 		<h1>Test Website</h1>
 		<p>Personal website for Test</p>
@@ -66,7 +85,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div id="about" class="container-fluid">
 		<div class="row">
 			<div class="col-sm-8">
 				<h2>About Test</h2>
@@ -96,7 +115,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid text-center">
+	<div id="services" class="container-fluid text-center">
 		<h2>Services</h2>
 		<p>What we offer</p>
 		<div class="row">
@@ -151,7 +170,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid text-center">
+	<div id="portfolio" class="container-fluid text-center">
 		<h2>Portfolio</h2>
 		<p>See what I've created</p>
 		<div class="row text-center">
@@ -192,7 +211,7 @@
 		</div>
 	</div>
 	<div class="container-fluid">
-		<h2>What our customers say</h2>
+		<h2 class="text-center">What our customers say</h2>
 		<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -226,6 +245,164 @@
 			</a>
 		</div>
 	</div>
+	<div id="pricing" class="container-fluid">
+		<div class="row">
+			<div class="text-center">
+				<h2>Pricing</h2>
+				<h4>Choose a payment plan that works for you</h4>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Basic</h1>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong>20</strong> Lorem
+						</p>
+						<p>
+							<strong>15</strong> Ipsum
+						</p>
+						<p>
+							<strong>5</strong> Dolor
+						</p>
+						<p>
+							<strong>2</strong> Sit
+						</p>
+					</div>
+					<div class="panel-footer">
+						<h3>$19</h3>
+						<h4>per month</h4>
+						<button class="btn btn-lg">Sign up</button>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Basic</h1>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong>20</strong> Lorem
+						</p>
+						<p>
+							<strong>15</strong> Ipsum
+						</p>
+						<p>
+							<strong>5</strong> Dolor
+						</p>
+						<p>
+							<strong>2</strong> Sit
+						</p>
+					</div>
+					<div class="panel-footer">
+						<h3>$19</h3>
+						<h4>per month</h4>
+						<button class="btn btn-lg">Sign up</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h1>Basic</h1>
+					</div>
+					<div class="panel-body">
+						<p>
+							<strong>20</strong> Lorem
+						</p>
+						<p>
+							<strong>15</strong> Ipsum
+						</p>
+						<p>
+							<strong>5</strong> Dolor
+						</p>
+						<p>
+							<strong>2</strong> Sit
+						</p>
+					</div>
+					<div class="panel-footer">
+						<h3>$19</h3>
+						<h4>per month</h4>
+						<button class="btn btn-lg">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact" class="container-fluid">
+		<h2 class="text-center">CONTACT</h2>
+		<div class="row">
+			<div class="col-sm-5">
+				<p>Contact us and we'll get get back to you within 24 hours.</p>
+				<p>
+					<span class="glyphicon glyphicon-map-marker"></span> Chicago, US
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-phone"></span> +00 1515151515
+				</p>
+				<p>
+					<span class="glyphicon glyphicon-envelope"></span> example@example.com
+				</p>
+			</div>
+			<div class="col-sm-7">
+				<div class="row">
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+					</div>
+					<div class="col-sm-6 form-group">
+						<input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+					</div>
+				</div>
+				<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+				<br>
+				<div class="row">
+					<div class="col-sm-12 form-group">
+						<button class="btn btn-default pull-right" type="submit">Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Set height and width with CSS -->
+	<div id="googleMap" style="height: 400px; width: 100%;"></div>
+
+	<!-- Add Google Maps -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+		function initialize() {
+			var mapProp = {
+				center : myCenter,
+				zoom : 12,
+				scrollwheel : false,
+				draggable : false,
+				mapTypeId : google.maps.MapTypeId.ROADMAP
+			};
+
+			var map = new google.maps.Map(document.getElementById("googleMap"),
+					mapProp);
+
+			var marker = new google.maps.Marker({
+				position : myCenter,
+			});
+
+			marker.setMap(map);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	
+	<footer class="container-fluid text-center">
+		<a href="#myPage" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		
+	
+	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="../../bootstrap/js/bootstrap.js"></script>
 	<script src="../js/script.js"></script>

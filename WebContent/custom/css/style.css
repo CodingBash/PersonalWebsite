@@ -67,3 +67,61 @@
 .item span {
     font-style: normal;
 }
+
+.panel {
+	border: 1px solid #f4511e;
+	border-radius: 0px;
+	transition: box-shadow 0.5s;
+}
+.panel:hover {
+	box-shadow: 5px 10px 40px rgba(0,0,0,0.2);
+}
+.panel-heading{
+	background-color:#f4511e !important; 
+	color: #FFF !important;
+}
+.panel-body, .panel-footer{
+	background-color: #fff;
+}
+
+.btn, .btn:visited, .btn:link, .btn:focus{
+	font-weight:400;
+	background-color: #f4511e;
+	color: #FFF;
+}
+
+button.btn:active, button.btn:hover {
+	font-weight:400;
+	background-color: #fff;
+	color:  #f4511e;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #f4511e;
+	border: 0;
+	z-index: 9999;
+	font-size: 12px !important;
+	line-height: 1.4286 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand{
+	color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a{
+	color: #f4511e;
+	background-color: #fff !important;
+}
+.navbar-default .navbar-toggle{
+	border-color: transparent;
+	color: #fff !important;
+}
+
+footer .glyphicon{
+	font-size: 20px;
+	margin-bottom: 20px;
+	color:  #f4511e;
+}
